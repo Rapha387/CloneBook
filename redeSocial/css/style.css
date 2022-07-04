@@ -1,0 +1,355 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    padding-top: 60px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button ì{
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    background-color: #3b5998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    align-items: center;
+}
+
+header i {
+    display: none !important;
+    color: white;
+}
+
+header h3{
+    color: #fff;
+}
+
+header input {
+    padding: 5px;
+    width: 250px;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    margin: auto;
+    width: 900px;
+}
+
+.perfil {
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.fundo-perfil{
+    width: 100%;
+    height: 200px;
+}
+
+.foto-fundo {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.perfil-baixo{
+    padding: 24px;
+}
+
+.infos-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.infos-perfil h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.infos-perfil p{
+    font-size: 14px;
+    color: #8f8f8f;
+    margin-top: 5px;
+}
+
+.botoes-perfil button {
+    width: 100px;
+    height: 33px;
+    color: white;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.botoes-perfil button:hover{
+    background-color:#46619a;
+}
+
+
+#btnMensagem {
+    border: solid 1px #898989;
+    background-color: white;
+    color: #898989;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 4px #fff;
+    margin-top: -125px;
+}
+
+.publicacoes {
+    width: 60%;
+}
+
+.inicio-publicacoes {
+    padding: 15px;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.postagens {
+    padding: 15px;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotos-amigos{
+    width: 38%;
+}
+
+.imagens-wrap {
+    gap: 4px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagem-amigo {
+    color: #2a2a2a;
+    font-size: 13px;
+    width: 32%;
+    font-weight: 600;
+}
+
+.fotos-amigos img{
+    width: 100%;
+}
+
+.fotos-amigos h3{
+    margin-bottom: 15px;
+}
+
+.fotos {
+    padding: 15px;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.amigos {
+    padding: 15px;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+}
+
+.foto-perfil-postagens{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.infos-postagem {
+    font-size: 13px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nome-data p {
+    margin-top: 2px;
+    font-size: 11px;
+    color:#898989 ;
+}
+
+.foto-postagens{
+    width: 100%;
+}
+
+.likes-comentarios {
+    font-size: 14px;
+    color: #898989;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reacoes {
+    color: #898989;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid thin #cacaca;
+    border-bottom: solid thin #cacaca;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.reacoes p{
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.reacoes p:hover{
+    color: #3b5998;
+}
+
+.comentarios {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-comentar {
+    background-color: #f0f2f5;
+    border: solid thin #cacaca;
+    width: 462px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .conteudo-header{
+        width: 300px;
+    }
+    header input{
+        display: none;
+    }
+    header i{
+        display: block !important;
+    }
+    .perfil-baixo{
+        text-align: center;
+    }
+    .infos-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+    .botoes-perfil{
+        margin-top: 20px;
+    }
+    .botoes-perfil button{
+        width: 90px;
+        font-size: 13px;
+    }
+    .container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-flex{
+        flex-direction: column;
+    }
+    .fotos-amigos{
+        width: 100%
+    }
+    .imagem-amigo {
+        width: 32%;
+    }
+    .publicacoes{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .nome-data{
+        font-size: 13px;
+    }
+    .nome-data p{
+        font-size: 13px;
+    }
+    .likes-comentarios {
+        font-size: 12px;
+    }
+    .reacoes{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .conteudo-header {
+        width: 500px;
+    }
+    header input {
+        width: 300px;
+    }
+    .container{
+        width: 500px;
+    }
+    .container-flex {
+        flex-direction: column;
+    }
+    .fotos-amigos {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .fotos, .amigos {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .imagem-amigo {
+        width: 32%;
+    }
+    .publicacoes {
+        width: 100%;
+    }
+    .input-comentar {
+        width: 423px;
+    }
+    .likes-comentarios {
+        font-size: 13px;
+    }
+    .reacoes {
+        font-size: 13px;
+    }
+}
